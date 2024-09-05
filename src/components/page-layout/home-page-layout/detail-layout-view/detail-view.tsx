@@ -1,18 +1,10 @@
-import { IconButton } from "@mui/material";
 import styles from "./detail-view.module.scss";
 import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
 import { ProductDataType } from "../../../../fetchData/product-data";
+import { IconButton } from "@mui/material";
 import CardComponent from "../../../card-component";
 
-function DetailView({
-  data,
-  desktopMode,
-  onBackClick,
-}: {
-  data?: ProductDataType;
-  desktopMode: boolean;
-  onBackClick: () => void;
-}) {
+function DetailView({data, desktopMode, onBackClick,}: {data?: ProductDataType;  desktopMode: boolean; onBackClick: () => void;}) {
   return (
     <div className={styles.detailView}>
       {data ? (

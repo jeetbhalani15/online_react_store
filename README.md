@@ -10,7 +10,6 @@ A React Online Store built with React JS and TypeScript with the following featu
 
 ```bash
 git clone https://github.com/jeetbhalani15/online_react_store.git
-cd repository
 ```
 
 ### 2. Install Project Dependencies

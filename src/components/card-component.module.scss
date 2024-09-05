@@ -1,0 +1,230 @@
+.CardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    cursor: pointer;
+
+    .productImage {
+        background-color: #F5F5F5;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px;
+
+        img {
+            height: 425px;
+            width: 80%;
+            object-fit: contain;
+        }
+    }
+
+    .detailsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 0;
+        }
+
+        h1 {
+            text-transform: capitalize;
+            color: #6941C6;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        h2 {
+            color: #101828;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        h3 {
+            color: #475467;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        h4 {
+            color: #101828;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 1400px) {
+            h1 {
+                font-size: 12px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            h3 {
+                font-size: 14px;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+        }
+
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .description {}
+        }
+
+        .rating {
+            margin: 10px 0 12px 0;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            h6,
+            p {
+                font-size: 16px;
+                margin: 0;
+            }
+
+            h6 {
+                font-weight: 500
+            }
+
+            p {
+                font-weight: 400;
+                color: #475467;
+            }
+        }
+
+    }
+
+}
+
+
+.CardBox {
+    padding: 20px;
+    border: 1px solid #EAECF0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+
+    .productImage {
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 28px;
+        border-radius: 8px;
+        position: relative;
+
+        img {
+            width: 70px;
+            object-fit: contain;
+        }
+
+        .rating {
+            position: absolute;
+            bottom: 6px;
+            left: 6px;
+            display: flex;
+            gap: 4px;
+            border: 1px solid #EAECF0;
+            align-items: center;
+            border-radius: 16px;
+            padding: 2px 8px;
+            background-color: #ffffff;
+
+            h6 {
+                font-size: 12px;
+                font-weight: 500;
+                margin: 0;
+                color: #344054;
+            }
+        }
+    }
+
+    .detailsContainer {
+        width: 50%;
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 0;
+        }
+
+        h1 {
+            text-transform: capitalize;
+            color: #6941C6;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        h2 {
+            color: #101828;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        h3 {
+            color: #475467;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        h4 {
+            color: #101828;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 16px;
+
+            .description {
+                width: 225px;
+                white-space: wrap;
+
+                h3 {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                @media only screen and (max-device-width: 450px) {
+                    width: 125px;
+                }
+
+                @media only screen and (min-width: 451px) and (max-width: 600px) {
+                    width: 200px;
+                }
+            }
+        }
+
+    }
+}
+
+.CardBox:hover {
+    box-shadow: 0px 2px 4px -2px #1018280F, 0px 4px 8px -2px #1018281A;
+}
+
+
+.selectedCard {
+    border: 1px solid #B692F6;
+    box-shadow: 0px 2px 4px -2px #1018280F, 0px 4px 8px -2px #1018281A;
+}

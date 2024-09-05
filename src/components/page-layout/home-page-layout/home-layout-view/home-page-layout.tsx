@@ -30,9 +30,9 @@ function HomePage() {
     return (
       <div className={styles.masterViewContainer}>
         {isFetchingAllProductStatus ? (
-          <div className={styles.loaderContainer}>
+          <div className={styles.loader}>
             <CircularProgress />
-            <p>Fetching data...</p>
+            <p>Loading data...</p>
           </div>
         ) : (
           <MasterView
@@ -51,7 +51,7 @@ function HomePage() {
         {isFetchingSelectedProductDetails ? (
           <div className={styles.loader}>
             <CircularProgress />
-            <p>Fetching data...</p>
+            <p>Loading data...</p>
           </div>
         ) : (
           <DetailView
